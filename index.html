@@ -1,0 +1,640 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Roland Music</title>
+    <link rel="icon" type="images/png" href="/img/favicon webicon.png">
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.1/jquery.min.js"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Tinos">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.3.1/axios.js" integrity="sha512-4KKeTK7cvk+EcQrYt7bm52RAy7xzvQVjXbuNeompIYLxuNfXrlP/tMSeaI5C8Jwjx6f8x7OdjyvRoljPsX03Dw==" crossorigin="anonymous" referrerpolicy="no-referrer" defer></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.theme.min.css">
+    <script src="https://pagead2.googlesyndication.com/pagead/managed/js/adsense/m202301170101/show_ads_impl_with_ama_fy2021.js?client=ca-pub-3311815518700050&plah=bestjquery.com&bust=31071765" id="google_shimpl"></script><script type="text/javascript" src="https://code.jquery.com/jquery-1.12.0.min.js"></script>
+    <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/owl-carousel/1.3.3/owl.carousel.min.js"></script>
+    <script async src="https://cse.google.com/cse.js?cx=2296ae2ab412e4c4d" defer></script>
+    <link rel="stylesheet" href="chat.css">
+    <script src="chat.js" defer></script>
+    <script src="responses.js" defer></script>
+</head>
+
+<body> 
+  <div>
+    <nav class="navbar navbar-inverse navbar-fixed-top ">
+      <div class="container-fluid ">
+        <div class="navbar-header ">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>                        
+          </button>
+            <a class="navbar-brand" href=" index.html"><img src=" img/newlogo.png" width=270px" height="50px" alt=""></a>
+        </div>
+
+        <div class="collapse navbar-collapse " id="myNavbar">
+            <ul class="nav navbar-nav ">
+              <li id="home"><a href=" index.html"><span class="glyphicon glyphicon-home"></span>&#32HOME</a></li>
+              <li id="about"><a href=" About-page/index.html">ABOUT US</a></li>
+              <li id="products" class="dropdown"><a href=" Products/index.html">PRODUCTS <i class="fa fa-caret-down"></i> 
+                <div class="dropdown-content">
+                <div class="productlist1">
+                  <div class="col-md-4">
+                            <a href=" Products/index.html">
+                              <img src=" img/rct_pianos.jpg" alt="" class="menu-icons">
+                              <h4>PIANOS</h4>
+                            </a>
+                            <a href=" Products/index.html">
+                              <img src=" img/rct_synthesizers.jpg" alt="" class="menu-icons">
+                              <h4>SYNTHESIZERS</h4>
+                            </a>
+                            <a href=" Products/index.html">
+                              <img src=" img/rct_keyboards.jpg" alt="" class="menu-icons">
+                              <h4>KEYBOARDS</h4>
+                            </a>  
+                            <a href=" Products/index.html">
+                              <img src=" img/rct_guitar_bass.jpg" alt="" class="menu-icons">
+                              <h4>GUITAR & BASS</h4>
+                            </a>
+                            
+                  </div>
+                  <div class="col-md-4 ">
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_v-drums.jpg" alt="" class="menu-icons">
+                                <h4>DRUMS</h4>
+                              </a>
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_wind_instrument.jpg" alt="" class="menu-icons">
+                                <h4>WIND INSTR.</h4>
+                              </a>
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_production.jpg" alt="" class="menu-icons">
+                                <h4>PRODUCTION</h4>
+                              </a>  
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_amplifiers.jpg" alt="" class="menu-icons">
+                                <h4>AMPLIFIERS</h4>
+                              </a>
+                            </div>
+                            <div class="col-md-4 "> 
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_aira.jpg" alt="" class="menu-icons">
+                                <h4>AIRA & DJ</h4>
+                              </a>
+                             <a href=" Products/index.html">
+                                <img src=" img/rct_roland_cloud.jpg" alt="" class="menu-icons">
+                                <h4>CLOUD</h4>
+                              </a>
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_pro_video.jpg" alt="" class="menu-icons">
+                                <h4>A/V</h4>
+                              </a>  
+                              <a href=" Products/index.html">
+                                <img src=" img/rct_accessories.jpg" alt="" class="menu-icons">
+                                <h4>ACCESORIES</h4>
+                              </a>
+                            </div>
+                </div>
+                  </a>
+                </li>
+                <li id="play"><a href=" Play page/index.html">PLAY!</a></li>
+                <li id="contact" class="dropdown"><a href="" >CONTACT US <i class="fa fa-caret-down"></i>
+                      <div class="dropdown-content">
+                        <div class="productlist2" id="community">
+                          <div class="col-md-6 second">
+                            <a href="https://www.facebook.com/RolandGlobalOfficial/?brand_redir=72272268297">
+                              <img src=" img/menu_facebook.png" alt="" class="menu-icons">
+                             
+                            </a>
+                            <a href="https://www.youtube.com/user/rolandchannel">
+                              <img src=" img/menu_youtube.png" alt="" class="menu-icons">
+                            
+                            </a>
+                            <a href="https://twitter.com/rolandglobal">
+                              <img src=" img/menu_twitter.png" alt="" class="menu-icons">
+                            </a>  
+                          
+                            
+                          </div>
+                          <div class="col-md-6 second">
+                              <a href="https://www.instagram.com/rolandglobal/?hl=en">
+                                <img src=" img/menu-instagram.png" alt="" class="menu-icons">
+                                
+                              </a>
+                              <a href="https://www.roland.com/global/">
+                                <img src=" img/menu_social_media.png" alt="" class="menu-icons">
+                                
+                              </a>
+                              <a href="https://www.roland.com/global/">
+                                <img src=" img/menu-tiktok.png" alt="" class="menu-icons">
+                              </a>  
+                          </div>  
+                        </div>  
+                      </div>
+                   </a>
+                </li>
+            </ul>
+
+            <button class="btn btn-danger navbar-btn shine-me">SALE: 30% Today!</button>
+
+            <ul class="nav navbar-nav navbar-right">
+                <li><a href="LoginPage/index.html"><span class="glyphicon glyphicon-user"></span> Sign Up | Login</a></li>
+            </ul>
+
+            <form class="navbar-form navbar-right" action="" autocomplete="off">
+              <div class="input-group">
+                <div class="gcse-search"></div>
+              </div>
+            </form>
+        </div>
+    </nav>
+<div class="carouselDiv">
+  <div id="myCarousel" class="carousel slide" data-ride="carousel">
+    <ol class="carousel-indicators">
+      <li data-target="#myCarousel" data-slide-to="0" class="active line" ></li>
+      <li data-target="#myCarousel" data-slide-to="1" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="2" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="3" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="4" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="5" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="6" class="line"></li>
+      <li data-target="#myCarousel" data-slide-to="7" class="line"></li>
+    </ol>
+
+    <div class="carousel-inner">
+
+      <div class="item active">
+        <img src="img/billboard_aira_compact.jpg" alt=""">
+        <div class="carousel-caption">
+          <h3>AIRA</h3>
+          <p>Compact</p>
+          <a href="Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src="img/billboard_bridge_cast.jpg" alt=""">
+        <div class="carousel-caption">
+          <h3>BRIDGE CAST</h3>
+          <p>Dual bus gaming mixer</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+    
+      <div class="item">
+        <img src=" img/billboard_e-x50.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>E-X50</h3>
+          <p>Arranger keyboard</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src=" img/billboard_f107.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>F107</h3>
+          <p>Digital piano</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src=" img/billboard_jc-120-50a.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>JC-120 Jazz Chorus</h3>
+          <p>Roland 50th Anniversary Limited Edition</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src=" img/billboard_juno-x.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>JUNO-X</h3>
+          <p>Programmable Polyphonic Synthesizer</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src=" img/billboard_spd-sx_pro.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>SPD-SX Pro</h3>
+          <p>Sampling pad</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+
+      <div class="item">
+        <img src=" img/billboard_td-02_series.jpg" alt="">
+        <div class="carousel-caption">
+          <h3>TD-02 Series</h3>
+          <p>V-drums</p>
+          <a href=" Products/index.html"><button class="btn shine-me" id="btn-explore"> EXPLORE! </button></a>
+        </div>
+      </div>
+    </div>
+
+    <a class="left carousel-control" href="#myCarousel" data-slide="prev">
+      <span class="glyphicon glyphicon-chevron-left"></span>
+      <span class="sr-only">Previous</span>
+    </a>
+    <a class="right carousel-control" href="#myCarousel" data-slide="next">
+      <span class="glyphicon glyphicon-chevron-right"></span>
+      <span class="sr-only">Next</span>
+    </a>
+  </div>
+</div>
+
+
+<div class="row featured reveal">
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured product</p>
+    <div class="thumbnail">
+      <a class="hyperlink" href="#">
+        <img src=" img/promo_fp_aerophone_ae-10g.jpg" alt="Lights" style="width:100%">
+        <div class="caption">
+          <h3 class="featureTitle">Aerophone AE-10</h3>
+          <p>A collection of inspiring wind instruments with sax fingering and expressive breath control</p>
+        </div>
+        <a href=" Products/index.html" class="findMore"><button>></button> FIND OUT MORE!</a>
+      </div>
+      </a>
+     
+  </div>
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured product</p>
+    <div class="thumbnail">
+      <a class='hyperlink' href="#">
+        <img src=" img/promo_fp_jupiter-xm.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <h3 class="featureTitle">Jupiter-X</h3>
+          <p>JUPITER-X combines classic Roland design and premium build quality with a powerful new synth engine. It faithfully recreates sought-after instruments from our long history of genre-defining sounds. </p>
+        </div>
+      </a>
+    </div>
+    <a href=" Products/index.html" class="findMore"><button>></button> FIND OUT MORE!</a>
+  </div>
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured product</p>
+    <div class="thumbnail">
+      <a class='hyperlink' href="#">
+        <img src=" img/promo_fp_roland_new_products.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <h3 class="featureTitle">Roland New Products</h3>
+          <p>Check out the new products from Roland. Roland quality guaranted.</p>
+         </div>
+        </a>
+      </div>
+      <a href=" Products/index.html" class="findMore"><button>></button> FIND OUT MORE!</a>
+    </div>
+  </div>
+
+  <div class="row featured reveal">
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured video</p>
+    <div class="thumbnail">
+      <a class="hyperlink" href="#Roland" data-toggle="modal" >
+       
+        <img src=" img/vpromo_fv_fantom_model_expansion.jpg" alt="Lights" style="width:100%">
+        <div class="caption"> 
+          <h3 class="featureTitle">GO:MIXER PRO-X</h3>
+          <p>Whether you're streaming, performing, or recording, sound quality can make or break your listeners' experience. The GO:MIXER PRO:X delivers professional-quality audio from a compact, palm-sized audio mixer that works with your mobile device just about anywhere.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured video</p>
+    <div class="thumbnail">
+      <a class="hyperlink" href="#Roland" data-toggle="modal" >
+        <img src=" img/vpromo_fv_fp-x_series_performance.jpg" alt="Nature" style="width:100%">
+        <div class="caption">
+          <h3 class="featureTitle">Roland FP-90X Digital Piano Performance</h3>
+          <p>Watch Josh Jacobson perform on Roland’s flagship FP-90X portable digital piano. Eight ready-to-play variations, ranging from concert to stage pianos, combined with PureAcoustic Ambience environments, provide an almost infinite selection of sounds.</p>
+        </div>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-4">
+    <p class="featuredProduct">Featured video</p>
+    <div class="thumbnail">
+      <a class="hyperlink" href="#Roland" data-toggle="modal" >
+        <img src=" img/vpromo_fv_gomixer_pro-x.jpg" alt="Fjords" style="width:100%">
+        <div class="caption">
+          <h3 class="featureTitle">Model Expansions for FANTOM</h3>
+          <p>Now available for FANTOM, ZEN-Core Model Expansions infuse your synthesizer with the authentic characteristics of legendary Roland instruments, each with their own sonic personalities, features, and preset tones.</p>
+          </div>
+        </a>
+      </div>
+   </div>
+  </div>
+
+</div>
+
+  <div id="Roland" class="modal fade">
+    <div class="modal-dialog">
+      <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-hidden="true">❌</button>
+                <h4 class="modal-title">GO:MIXER PRO-X</h4>
+            </div>
+           
+            <div class="modal-body">
+              <iframe width="560" height="315" src="https://www.youtube.com/embed/1wBXT-DdR8Q" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share" allowfullscreen></iframe>
+            </div>
+
+      </div>
+    </div>
+  </div>
+  
+  <div class="container-fluid featuredContainer ">
+    <div class="row rowIconPictures rowIconPictures1">
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_pianos.jpg" alt=""> </a>
+        <h4>PIANOS</h4>
+      </div>
+
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_synthesizers.jpg" alt=""></a>
+        <h4>SYNTHESIZERS</h4>
+      </div>
+
+      <div class="col-md-3">
+         <a href=" Products/index.html"> <img src=" img/rct_keyboards.jpg" alt=""> </a>
+        <h4>KEYBOARDS</h4>
+      </div>
+
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_guitar_bass.jpg" alt=""> </a>
+        <h4>GUITAR & BASS</h4>
+      </div>
+    </div>
+
+    <div class="row rowIconPictures">
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_v-drums.jpg" alt=""> </a>
+        <h4>DRUMS & PERCUSSION</h4>
+      </div>
+
+      <div class="col-md-3">
+         <a href=" Products/index.html"> <img src=" img/rct_wind_instrument.jpg" alt=""> </a>
+        <h4>WIND INSTRUMENTS</h4>
+      </div>
+
+      <div class="col-md-3">
+         <a href=" Products/index.html"> <img src=" img/rct_production.jpg" alt=""> </a>
+        <h4>PRODUCTION</h4>
+      </div>
+
+      <div class="col-md-3">
+         <a href=" Products/index.html"> <img src=" img/rct_amplifiers.jpg" alt=""> </a>
+        <h4>AMPLIFIERS</h4>
+      </div>
+    </div>
+
+    <div class="row rowIconPictures">
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_aira.jpg" alt=""></a>
+        <h4>AIRA & DJ</h4>
+      </div>
+
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_roland_cloud.jpg" alt=""></a>
+        <h4>ROLAND CLOUD</h4>
+      </div>
+
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src=" img/rct_pro_video.jpg" alt=""></a>
+        <h4>PROFESSIONAL A/V</h4>
+      </div>
+
+      <div class="col-md-3">
+        <a href=" Products/index.html"> <img src="img/rct_accessories.jpg" alt=""></a>
+        <h4>ACCESORIES</h4>
+        
+      </div>
+    </div>
+  </div>
+
+  <div class="container testimonialContainer">
+      <div class="row">
+          <div class="col-md-8 col-md-offset-2">
+              <div class="testimonial-bg">
+                <h3>Our customers reviews</h3>
+                  <div id="testimonial-slider" class="owl-carousel">
+                      <div class="testimonial">
+                          <p class="description" id="testimonial0">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                          </p>
+                          <div class="pic">
+                              <img src=" img/img-1.jpg" alt="">
+                          </div>
+                          <h3 class="title">Williamson,</h3>
+                          <span class="post">Customer</span>
+                      </div>
+  
+                      <div class="testimonial">
+                          <p class="description" id="testimonial1">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                          </p>
+                          <div class="pic">
+                              <img src=" img/img-2.jpg" alt="">
+                          </div>
+                          <h3 class="title">kristiana,</h3>
+                          <span class="post">Customer</span>
+                      </div>
+
+                      <div class="testimonial">
+                          <p class="description" id="testimonial2">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                          </p>
+                          <div class="pic">
+                              <img src=" img/img-3.jpg" alt="">
+                          </div>
+                          <h3 class="title">Kevin,</h3>
+                          <span class="post">Customer</span>
+                      </div>
+
+                      <div class="testimonial">
+                          <p class="description" id="testimonial3">
+                              Lorem ipsum dolor sit amet, consectetur adipiscing elit. Donec at augue sed elit eleifend tempus. Etiam malesuada vulputate justo quis bibendum. Nam maximus ultricies rhoncus. Ut non felis vel enim dapibus.
+                          </p>
+                          <div class="pic">
+                              <img src=" img/img-4.jpg" alt="">
+                          </div>
+                          <h3 class="title">paula,</h3>
+                          <span class="post">Customer</span>
+                      </div>
+                  </div>
+              </div>
+          </div>
+      </div>
+  </div>
+
+  <div class="chat-bar-collapsible">
+    <button id="chat-button" type="button" class="collapsible">Chat with us!
+        <i id="chat-icon" style="color: #fff;" class="fa fa-fw fa-comments-o"></i>
+    </button>
+
+    <div class="content">
+        <div class="full-chat-block">
+          
+            <div class="outer-container">
+                <div class="chat-container">
+                
+                    <div id="chatbox">
+                        <h5 id="chat-timestamp"></h5>
+                        <p id="botStarterMessage" class="botText"><span>Loading...</span></p>
+                    </div>
+                    <div class="chat-bar-input-block">
+                        <div id="userInput">
+                            <input id="textInput" class="input-box" type="text" name="msg"
+                                placeholder="Tap 'Enter' to send a message">
+                            <p></p>
+                        </div>
+
+                        <div class="chat-bar-icons">
+                            <i id="chat-icon" class="fa fa-fw fa-heart"
+                                onclick="heartButton()"></i>
+                            <i id="chat-icon" class="fa fa-fw fa-send"
+                                onclick="sendButton()"></i>
+                        </div>
+                    </div>
+
+                    <div id="chat-bar-bottom">
+                        <p></p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+</div>
+
+
+
+
+  
+  <div class="up">
+    <button class="up-button btn-default" onclick="topFunction()" id="myBtn">  
+      <i class="fa fa-caret-up"></i>
+    </button>
+      
+  </div>
+
+</div>
+
+<div class="icon-bar1">
+  <a href="https://www.facebook.com/RolandGlobalOfficial/?brand_redir=72272268297" class="facebook"><i class="fa fa-facebook"></i></a>
+  <a href="href="https://twitter.com/rolandglobal"" class="twitter"><i class="fa fa-twitter"></i></a>
+  <a href="#" class="google"><i class="fa fa-google"></i></a>
+  <a href="https://www.linkedin.com/company/roland" class="linkedin"><i class="fa fa-linkedin"></i></a>
+  <a href="href="https://www.youtube.com/user/rolandchannel"" class="youtube"><i class="fa fa-youtube"></i></a>
+</div>
+
+<footer class="container-fluid">
+  <div class="row footer container-fluid">
+    <div class="col-md-2">
+      <h5>PRODUCTS</h5>
+      <a href="">Featured products</a>
+      <a href="">Pianos</a>
+      <a href="">Organs</a>
+      <a href="">Synthesizer</a>
+      <a href="">Keyboards</a>
+      <a href="">Guitar & Bass</a>
+      <a href="">Drums & Percussion</a>
+      <a href="">Wind Instruments</a>
+      <a href="">Production</a>
+      <a href="">Amplifiers</a>
+      <a href="">AIRA & DJ</a>
+      <a href="">Roland Cloud</a>
+      <a href="">Professional AV</a>
+      <a href="">Accesories</a>
+      <a href="">Apps</a>
+    </div>
+    <div class="col-md-2">
+      <h5>COMMUNITY</h5>
+      <a href="">Facebook</a>
+      <a href="">YouTube</a>
+      <a href="">Twitter</a>
+      <a href="">Instagram</a>
+      <a href="">World Social Network</a>
+      </div>
+    <div class="col-md-2">
+      <h5>SUPPORT</h5>
+      <a href="">Updates & Drivers</a>
+      <a href="">Owner's Manuals</a>
+      <a href="">Support Documents</a>
+      <a href="">Support News</a>
+      </div>
+    <div class="col-md-2">
+      <h5>ARTICLES</h5>
+      <a href="">Stories</a>
+      <a href="">Learn</a>
+      <a href="">Discover</a>
+      <a href="">Knowledge Base</a>
+      </div>
+    <div class="col-md-2">
+      <h5>IR</h5>
+      <a href="">Management Policy</a>
+      <a href="">Financial Information</a>
+      <a href="">IR Library</a>
+      <a href="">Stock Information</a>
+      </div>
+    <div class="col-md-2">
+      <h5>COMPANY</h5>
+      <a href="">Corporate Information</a>
+      <a href="">Philosophy</a>
+      <a href="">Brands</a>
+      <a href="">History</a>
+      </div>
+  </div>
+
+  <div class="row container-fluid footer2">
+
+      <div class="col-md-6">
+        <img src=" img/promo_boss.jpg" alt="">
+      </div>
+      
+      <div class="col-md-6">
+        <img src=" img/promo_v-moda.png" alt="">
+      </div>
+   
+   
+   
+    <div class="row footer3">
+            
+      <div class="col-6 copyright privacy">
+              Privacy Statement | Terms of Use | Accesibility Statement
+      </div>
+            
+      <div class="col-6 copyright privacy">
+              Copyright © 2023 Roland Corporation
+      </div>
+    
+        
+    </div>
+
+  
+
+  
+</footer>
+
+
+
+
+
+</body>
+</html>
