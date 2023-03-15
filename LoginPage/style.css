@@ -1,0 +1,506 @@
+/* var colors  */
+:root {
+  --pineGreen: #1d3c45;
+  --orangeLight: rgb(210, 96, 26);
+  --lightPeach: rgb(255, 241, 225);
+}
+
+/* settings for entire page */
+
+* {
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: 'Tinos', serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: var(--pineGreen);
+}
+
+/* navigation bar style */
+
+.navbar {
+  padding-top: 1.4vw;
+  padding-bottom: 1.4vw;
+  font-size: 17px;
+}
+
+.navbar-header > a {
+  transform: translateY(-30%);
+}
+
+.navbar-header > a:hover {
+  filter: brightness(120%);
+  transition: 0.1s
+}
+
+#contact:hover, #home:hover, #about:hover, #products:hover, #play:hover {
+    transition: 320ms;
+    background-color:  #d2601a;
+    border-radius: 5px;
+    color: var(--lightPeach);
+ }
+
+ .dropdown-content {
+  display: none;
+  position: absolute;
+  background-color: var(--lightPeach);
+  z-index: 2;
+}
+
+.dropdown-content a {
+  margin: .8vw;
+  margin-left: -5px;
+  text-decoration: none;
+  display: block;
+  justify-content: inline-block;
+  background-color: var(--lightPeach);
+  color: var(--orangeLight);
+}
+
+.dropdown:hover .dropdown-content {
+  display: block;
+}
+
+.btn-danger {
+  margin-left: 10px;
+  background-color: var(--orangeLight);
+  color: var(--lightPeach);
+}
+
+.shine-me { 
+    width: min-content;
+    -webkit-animation-name: ShineAnimation; 
+    -webkit-animation-duration: 40s; 
+    -webkit-animation-iteration-count: infinite; 
+    -webkit-animation-timing-function: cubic-bezier(.12,.89,.98,.47); 
+  }
+
+  @-webkit-keyframes ShineAnimation{ 
+    from { 
+      background-repeat:no-repeat; 
+      background-image:-webkit-linear-gradient( top left, 
+                      rgba(255, 255, 255, 0.0) 0%, 
+                      rgba(255, 255, 255, 0.0) 45%, rgba(255, 255, 255, 0.5) 48%, 
+                      rgba(255, 255, 255, 0.8) 50%, rgba(255, 255, 255, 0.5) 52%, 
+                      rgba(255, 255, 255, 0.0) 57%, rgba(255, 255, 255, 0.0) 100% ); 
+      background-position:-250px -250px; background-size: 600px 600px } 
+    to { 
+      background-repeat:no-repeat; 
+      background-position:250px 250px;
+    } 
+  }
+
+  .productlist1 {
+    display: flex;
+  }
+  
+  .menu-icons {
+    width: 80%;
+    height: 100%;
+    margin-left: 20px;
+  }  
+
+#community > div {
+  scale: 0.8
+ }
+
+.second > a:hover {
+  opacity: 0.9;
+} 
+
+.productlist2 {
+  font-weight: bold;
+  width: 38vw;
+  margin: -30px;
+  z-index: 1;
+}
+
+/* search group part */
+
+.input-group {
+  width: 100%;
+  z-index: 0;
+  margin-top: -15px;
+  opacity: 0.9;
+  border-radius: 20px;
+  position: relative;
+}
+
+/* button to go up */
+
+.up {
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  padding-bottom: 5vw;
+  background-color: rgb(199, 230, 230);
+  padding-top: 4vw;
+  font-weight: bolder;
+  font-size: 1vw;
+}
+
+.up-button {
+  width: 5vw;
+  height: 5vw;
+  border-radius: 50%;
+  border: none;
+}
+
+.up-button:hover {
+  background-color: var(--orangeLight);
+  transition: 0.4s;
+}
+
+.fa-caret-up {
+  scale: 3;
+}
+
+/* footer */
+
+.col-md-2 {
+  display: flex;
+  flex-direction: column;
+}
+
+.footer {
+ padding: 5vw;
+ background-color: black;
+}
+
+.col-md-2 > h5 {
+  color: var(--orangeLight);
+  padding-bottom: 2vw;
+  font-size: 20px;
+}
+
+.col-md-2 > h5:hover {
+  color: var(--lightPeach);
+  transition: 0.5s;
+  cursor: pointer
+}
+
+.col-md-2 > a {
+  text-decoration: none;
+  font-size: 14px;
+  color: var(--lightPeach);
+}
+
+.col-md-2 > a:hover {
+  color: var(--orangeLight);
+  transition: 0.5s;
+}
+
+.copyright {
+  color: var(--lightPeach);
+  padding: 4vw
+}
+
+.privacy {
+  display: flex;
+  flex-direction: row;
+}
+
+.footer3 {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  background-color: black;
+}
+
+.footer2 {
+  background-color: black;
+}
+
+.footer2 > div > img {
+  width: 100%;
+}
+
+
+/* login container */
+
+.login-box{
+	height: 800px;
+	margin: 15vw 8vw ;
+  width: 100%;
+	max-width: 200vw;
+	min-height: 730px;
+	position: relative;
+	background: url(https://static.roland.com/products/piano_every_day/features/images/exercise_palying_piano.jpg) no-repeat center;
+  box-shadow: 0 12px 15px 0 rgba(0,0,0,.24),0 17px 50px 0 rgba(0,0,0,.19);
+  opacity: 0.95;
+}
+
+@media screen and (max-width: 800px) {
+  .login-box {
+    margin-left: 5px;
+    width: 95%
+    }
+
+    .hr2 {
+      background-color: red;
+    }
+}
+
+.box-title-explore {
+  margin-top: -50px;
+  margin-bottom: 30px;
+  color: var(--orangeLight);
+  font-variant: small-caps;
+}
+
+/* login container */
+
+
+.login-snip{
+	width: 100%;
+	height: 100%;
+	position: absolute;
+	padding: 70px 70px 50px 70px;
+	background: var(--pineGreen);
+  color: var(--lightPeach);
+}
+
+@media screen and (max-width: 900px) {
+  .login-snip {
+    width: 90%
+  }
+}
+
+.login-snip .login,
+.login-snip .sign-up-form{
+	top: 0;
+	left: 0;
+	right: 0;
+	bottom: 0;
+	position: absolute;
+	transform: rotateY(180deg);
+	backface-visibility: hidden;
+	transition: all .5s linear;
+}
+
+.login-snip .sign-in,
+.login-snip .sign-up,
+.login-space .group .check{
+	display: none;
+}
+
+.login-snip .tab,
+.login-space .group .label,
+.login-space .group .button{
+	text-transform: uppercase;
+}
+
+.login-snip .tab{
+	font-size: 22px;
+  letter-spacing: 1px;
+	margin-right:15px;
+	padding-bottom:5px;
+	margin:0 15px 10px 0;
+	display:inline-block;
+	border-bottom:2px solid transparent;
+}
+.login-snip .sign-in:checked + .tab,
+.login-snip .sign-up:checked + .tab{
+	color:#fff;
+	border-color: var(--orangeLight);
+}
+.login-space{
+	min-height:345px;
+	position:relative;
+	perspective:1000px;
+	transform-style: preserve-3d;
+}
+.login-space .group{
+	margin-bottom: 15px;
+}
+.login-space .group .label,
+.login-space .group .input,
+.login-space .group .button{
+	width:100%;
+	color: var(--lightPeach);
+	display:block;
+}
+.login-space .group .input,
+.login-space .group .button{
+	border:none;
+	padding:15px 20px;
+	border-radius:25px;
+	background:rgba(255,255,255,.1);
+}
+
+.login-space .group input[data-type="password"]{
+	/* text-security: circle; */
+	/* -webkit-text-security:circle; */
+}
+
+.login-space .group .label{
+	color: var(--lightPeach);
+	font-size:14px;
+}
+
+.login-space .group .button{
+	background: var(--orangeLight);
+  font-size: 17px;
+}
+
+.login-space .group label .icon{
+	width:15px;
+	height:15px;
+	border-radius:2px;
+	position:relative;
+	display:inline-block;
+	background: var(--orangeLight);
+}
+
+.icon {
+  margin-left: 15px;
+}
+
+#showPassword {
+  margin-top: 17px;
+}
+.login-space .group label .icon:before,
+.login-space .group label .icon:after{
+	content:'';
+	width:10px;
+	height:2px;
+	background:#fff;
+	position:absolute;
+	
+}
+.login-space .group label .icon:before{
+	left:3px;
+	width:5px;
+	bottom:6px;
+	transform:scale(0) rotate(0);
+}
+.login-space .group label .icon:after{
+	top:6px;
+	right:0;
+	transform:scale(0) rotate(0);
+}
+.login-space .group .check:checked + label{
+	color:#fff;
+}
+.login-space .group .check:checked + label .icon{
+	background: var(--orangeLight)
+  ;
+}
+.login-space .group .check:checked + label .icon:before{
+	transform:scale(1) rotate(45deg);
+}
+.login-space .group .check:checked + label .icon:after{
+	transform:scale(1) rotate(-45deg);
+}
+.login-snip .sign-in:checked + .tab + .sign-up + .tab + .login-space .login{
+	transform:rotate(0);
+}
+.login-snip .sign-up:checked + .tab + .login-space .sign-up-form{
+	transform:rotate(0);
+}
+
+*,:after,:before{box-sizing:border-box}
+.clearfix:after,.clearfix:before{content:'';display:table}
+.clearfix:after{clear:both;display:block}
+a{color:inherit;text-decoration:none}
+
+
+.hr1 {
+	height:2px;
+	margin: 50px 0 50px 0;
+	background: var(--orangeLight, .2);
+}
+
+.hr2 {
+  height:2px;
+	margin: 5px 0 5px 0;
+	background: var(--orangeLight, .2);
+}
+
+.foot{
+	text-align:center;
+  margin-top: 0px
+}
+.card{
+	width: 500px;
+	left: 100px;
+}
+
+::placeholder{
+color: #b3b3b3;
+} 
+
+#email-check-result {
+  padding: 10px;
+  font-size: 17px;
+}
+
+
+/* password validation */
+
+/* The message box is shown when the user clicks on the password field */
+#message {
+  display:none;
+  background: var(--lightPeach);
+  color: #000;
+  position: relative;
+  padding: 10px;
+  margin-top: 5px;
+  border-radius: 10px;
+}
+
+#message p {
+  padding: 0px 35px;
+  font-size: 14px;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+  color: green;
+}
+
+.valid:before {
+  position: relative;
+  left: -35px;
+  content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+  color: red;
+}
+
+.invalid:before {
+  position: relative;
+  left: -35px;
+  content: "✖";
+}
+
+/* background image  */
+
+.main {
+  background-image: url(https://static.roland.com/products/fp-e50/images/Explore_Create_hero.jpg);  
+  background-repeat: no-repeat;
+  background-size: 102%;
+  background-position: center;
+  width: 101%;
+}
+
+#user-check-result, 
+#password-check-result, 
+#pass-rep-res {
+  padding: 10px;
+}
+
+
+#warning, #warning1 {
+  display: none;
+}
+
+#welcomeMember {
+  color: var(--lightPeach);
+  font-size: 25px;
+  margin-left: 60px;
+}
